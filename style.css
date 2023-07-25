@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1e093c;
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: inline-block;
+    border: 2px solid #b7b7b7;
+    padding-top: 10px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px gray, -5px -5px #ffffff;
+}
+
+input {
+    width: 100%;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    color: #494949;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.row button {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 6px;
+    font-size: 27px;
+    font-weight: 500;
+    background-color: #efeded;
+    color: #383838;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.row button:focus,
+.row button:hover {
+    background-color: #9a9a9ac7;
+    font-size: 22px;
+}
+
+.row .clear-btn {
+    color: #ff0000;
+    font-weight: 550;
+}
+
+.row .operator {
+    color: #008700;
+    font-weight: 550;
+}
+
+button i {
+    background: none;
+}
+
+#equalto {
+    background-color: #008700;
+    color: #ffffff;
+    font-size: 35px;
+    transition: .3s;
+}
+
+#equalto:hover {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    section {
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .container {
+        border: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    input {
+        padding-inline: 30px;
+    }
+}
